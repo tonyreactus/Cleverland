@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Фильмы</title>
+    <style>
+      body {
+        background: #333; /* Цвет фона */
+        color: rgb(255, 255, 255); /* Цвет текста */
+      }
+
+      P.displayed1 {
+        text-align: center;
+        font-family: Verdana, Arial, Helvetica, sans-serif;
+        font-size: 30pt; /* Размер шрифта в пунктах */
+      }
+
+      P.displayed0 {
+        text-align: center;
+        font-family: Verdana, Arial, Helvetica, sans-serif;
+      }
+
+      IMG.displayed {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      video {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <img
+      class="displayed"
+      src="/HTML/homeworks/homeworks_10/files/online-kino_poster.jpg"
+    />
+    <p class="displayed0">
+      <b
+        ><a href="/HTML/homeworks/homeworks_10/index.html">Главная</a> |
+        <a href="/HTML/homeworks/homeworks_10/audio.html">Музыка</a>
+        |
+        <font color="red">Фильмы</font></b
+      >
+    </p>
+    <p class="displayed1">Кот в сапогах</p>
+    <video
+      controls
+      width="800"
+      height="450"
+      poster="/HTML/homeworks/homeworks_10/files/kot.jpg"
+      preload="none"
+    >
+      <source
+        src="/HTML/homeworks/homeworks_10/files/kot.mp4"
+        type="video/mp4"
+      />
+    </video>
+    <p class="displayed1">Мушкетёры</p>
+    <video
+      controls
+      width="800"
+      height="450"
+      poster="/HTML/homeworks/homeworks_10/files/musketeers.jpg"
+      preload="none"
+    >
+      <source
+        src="/HTML/homeworks/homeworks_10/files/musketeers.mp4"
+        type="video/mp4"
+      />
+    </video>
+    <p class="displayed1">Трансформеры</p>
+    <video
+      controls
+      width="800"
+      height="450"
+      poster="/HTML/homeworks/homeworks_10/files/transformers.jpg"
+      preload="none"
+    >
+      <source
+        src="/HTML/homeworks/homeworks_10/files/transformers.mp4"
+        type="video/mp4"
+      />
+    </video>
+  </body>
+</html>
