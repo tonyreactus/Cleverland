@@ -1,0 +1,204 @@
+.fist-header {
+  width: 1000px;
+  justify-content: space-between;
+  display: flex;
+  background-color: #2696e8;
+  border: 1px solid blue;
+  margin: 0px auto;
+}
+
+.fist-header a {
+  color: rgb(255, 255, 255);
+  padding: 12px;
+  text-decoration: none;
+  font-size: 17px;
+  border: 1px solid blue;
+}
+
+.fist-header a:hover {
+  background-color: rgb(255, 255, 255);
+  color: #2696e8;
+  border: 1px solid blue;
+}
+
+.second-header {
+  width: 1000px;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  display: flex;
+  background-color: #2696e8;
+  margin: 0px auto;
+}
+
+.second-header a {
+  color: rgb(255, 255, 255);
+  padding: 12px;
+  text-decoration: none;
+  font-size: 17px;
+  border: 1px solid blue;
+}
+
+.second-header a:hover {
+  background-color: rgb(255, 255, 255);
+  color: rgba(23, 133, 235, 0.959);
+  border: 1px solid blue;
+}
+
+.thirth-header {
+  width: 1000px;
+  justify-content: center;
+  display: flex;
+  background-color: #2696e8;
+  border: 1px solid blue;
+  margin: 0px auto;
+}
+
+.thirth-header a {
+  color: rgb(255, 255, 255);
+  padding: 12px;
+  text-decoration: none;
+  font-size: 17px;
+  border: 1px solid blue;
+}
+
+.thirth-header a:hover {
+  background-color: rgb(255, 255, 255);
+  color: rgba(23, 133, 235, 0.959);
+  border: 1px solid blue;
+}
+
+.fourth-header-one {
+  width: 1000px;
+  justify-content: flex-end;
+  display: flex;
+  background-color: #2696e8;
+  border: 1px solid blue;
+  margin: 0px auto;
+}
+
+.fourth-header-one a {
+  color: rgb(255, 255, 255);
+  padding: 12px;
+  text-decoration: none;
+  font-size: 17px;
+  border: 1px solid blue;
+}
+
+.fourth-header-one a:hover {
+  background-color: rgb(255, 255, 255);
+  color: rgba(23, 133, 235, 0.959);
+  border: 1px solid blue;
+}
+
+.fourth-header-two {
+  width: 1000px;
+  justify-content: flex-start;
+  display: flex;
+  background-color: #2696e8;
+  border: 1px solid blue;
+  margin: 0px auto;
+}
+
+.fourth-header-two a {
+  color: rgb(255, 255, 255);
+  padding: 12px;
+  text-decoration: none;
+  font-size: 17px;
+  border: 1px solid blue;
+}
+
+.fourth-header-two a:hover {
+  background-color: rgb(255, 255, 255);
+  color: #2696e8;
+  border: 1px solid blue;
+}
+
+#menu-five {
+  width: 1000px;
+  border: 1px solid blue;
+  background: #2696e8;
+  margin: 0px auto;
+  border: 1px solid blue;
+}
+#menu-five ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: stretch;
+  padding: 0px;
+  margin: 0px;
+  border: 1px solid blue;
+}
+#menu-five li {
+  list-style-type: none;
+  text-align: center;
+  border: 1px solid blue;
+}
+#menu-five a {
+  padding: 10px;
+  color: white;
+  display: block;
+  text-decoration: none;
+}
+
+#menu-five a:hover {
+  background-color: rgb(255, 255, 255);
+  color: #2696e8;
+}
+
+#menu-six {
+  width: 1000px;
+  border: 1px solid blue;
+  background: #2696e8;
+  margin: 0px auto;
+}
+#menu-six ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  margin: 0px;
+  border: 1px solid blue;
+}
+#menu-six li {
+  list-style-type: none;
+  text-align: center;
+  border: 1px solid blue;
+}
+#menu-six a {
+  padding: 10px;
+  color: white;
+  display: block;
+  text-decoration: none;
+}
+
+#menu-six a:hover {
+  background-color: rgb(255, 255, 255);
+  color: #2696e8;
+  border: 1px solid blue;
+}
+
+.seventh-header {
+  width: 350px;
+  justify-content: center;
+  display: flex;
+  background-color: #2696e8;
+  flex-direction: column;
+  border: 1px solid blue;
+  margin: 0px auto;
+}
+
+.seventh-header a {
+  color: rgb(255, 255, 255);
+  padding: 15px;
+  text-decoration: none;
+  font-size: 18px;
+  border: 1px solid blue;
+}
+
+.seventh-header a:hover {
+  background-color: rgb(255, 255, 255);
+  color: rgba(23, 133, 235, 0.959);
+  border: 1px solid blue;
+}
