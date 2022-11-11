@@ -22,12 +22,8 @@ td:first-child{color:blue; width:270px; font-size:20px;}
 for (let i=0;i<(types.length/2-1);i++){
 s+='<tr><td>&lt;input <span class="atrib">type</span>="<span class="snach">'+types[i*2]+'</span>"&gt;</td> <td><input type="'+types[i*2]+'"></td><td>'+types[i*2+1]+'</td></tr>'
 }
-
 document.write(s)
-
  </script>
-<!---  <input type="file" onChange="var fr = new FileReader(); fr.readAsDataURL(this.files[0]); fr.onload = function(e){ window._img.src=e.target.result;}" />
-<img id="_img" src=""/>   ---->
 
 </form>
 
