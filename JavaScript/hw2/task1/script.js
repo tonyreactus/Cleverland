@@ -1,8 +1,12 @@
 "use strict";
 
-let admin;
-let userName = "John";
+// Объявите две переменные: admin и userName.
+// Запишите строку "John" в переменную userName.
+// Скопируйте значение из переменной userName в admin.
+// Выведите на экран значение admin, используя функцию alert (должна показать «John»).
 
-userName = "John";
+let admin; //объявление переменной
+let userName = "John"; //присваивание переменной, т.е. записыпание значения, в данном случае строки
+
 admin = userName;
 alert(admin);
