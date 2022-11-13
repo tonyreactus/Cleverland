@@ -33,4 +33,15 @@ console.log(getSeason(6)); // мы ожидаем, что здесь бдует 
 console.log(getSeason(9)); // мы ожидаем, что здесь бдует отображено "осень"
 console.log(getSeason(13)); // мы ожидаем, что здесь бдует отображено "Месяц не найден"
 
-// ! сделать еще через алерты
+//Второе решение
+// const monthNumber = +prompt("Введите число месяца");
+
+// if (monthNumber === 12 || monthNumber === 1 || monthNumber === 2) {
+//   alert("зима");
+// } else if (monthNumber === 3 || monthNumber === 4 || monthNumber === 5) {
+//   alert("весна");
+// } else if (monthNumber === 6 || monthNumber === 7 || monthNumber === 8) {
+//   alert("лето");
+// } else if (monthNumber === 9 || monthNumber === 10 || monthNumber === 11) {
+//   alert("осень");
+// }

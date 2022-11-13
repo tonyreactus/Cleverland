@@ -27,7 +27,7 @@ const getUserImageData = (imgCount, imgWidth) => {
   const imgWidthWithMargin = imgWidth + margin * imageMarginCount;
   const rowImgCount = width / imgWidthWithMargin;
   const fullRowsCount = Math.floor(imgCount / rowImgCount);
-  const lastRowCount = imgCount - fullRowsCount * rowImgCount;
+  const lastRowCount = imgCount - fullRowsCount * rowImgCount || rowImgCount;
   return {
     rowImgCount,
     fullRowsCount,
