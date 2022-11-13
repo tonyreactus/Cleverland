@@ -1,5 +1,16 @@
 "use strict";
 
+// На странице шириной 1024px  расположена фотогалерея. Фотографии в галерее
+// располагаются в рядах. Когда ряд заполняется до конца (по ширине страницы),
+// начинается следующий ряд.
+// Для каждого изображения задан внешний отступ с каждой стороны(margin) 5px.
+// Создайте скрипт, который:
+// - вычисляет и выводит в модальном окне, какую нужно установить ширину для каждого
+// изображения, чтобы в каждом ряду умещалось 4 изображения на всю ширину страницы.
+// - спрашивает, сколько  изображений в галерее, и какова ширина каждого изображения.
+// Затем вычисляет  и выводит  в модальном окне количество изображений в каждом ряду,
+// количество полных рядов в галерее и количество изображений в последнем ряду.
+
 const width = 1024;
 const margin = 5;
 const imageMarginCount = 2;
@@ -9,7 +20,7 @@ const getImageWidth = () => {
 
   const imgWidth = (width - margin * imgCount * imageMarginCount) / imgCount;
 
-  return imgWidth; // завершение инструкции или результат выпулнения функции
+  return imgWidth; // завершение инструкции или результат выполнения функции
 };
 
 const getUserImageData = (imgCount, imgWidth) => {
@@ -17,7 +28,6 @@ const getUserImageData = (imgCount, imgWidth) => {
   const rowImgCount = width / imgWidthWithMargin;
   const fullRowsCount = Math.floor(imgCount / rowImgCount);
   const lastRowCount = imgCount - fullRowsCount * rowImgCount;
-
   return {
     rowImgCount,
     fullRowsCount,
