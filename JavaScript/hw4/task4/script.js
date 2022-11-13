@@ -1,11 +1,19 @@
 "use strict";
 
-let date = new Date();
-let h = date.getHours();
+// Узнать который сейчас час (именно количество часов) в Javascript можно следующим
+// образом:
+// let date = new Date();
+// let  h= date.getHours();
+// Составьте скрипт, который спрашивает имя пользователя и приветствует его
+//  по-разному,  в зависимости от времени суток. (Доброе утро, бодрый день и т.д)
+//  при помощи switch/case.
 
-let nameAnswer = prompt("Как Вас зовут?", "");
+const date = new Date();
+const hour = date.getHours();
 
-switch (h) {
+const nameAnswer = prompt("Как Вас зовут?", "");
+
+switch (hour) {
   case 6:
   case 7:
   case 8:
@@ -33,3 +41,10 @@ switch (h) {
   default:
     alert("Доброй ночи!" + nameAnswer);
 }
+
+//альтернативное решение, где сравнивается одинаковый тип значний, в данном случае boolean true и сравние, котороые булевое
+// switch (true) {
+//   case (hour) => 6 && hour <= 11:
+//     alert("Доброе утро!" + nameAnswer);
+//     break; // это как return, но только в циклах и switch  case
+// }
