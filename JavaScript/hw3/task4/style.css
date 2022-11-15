@@ -1,0 +1,26 @@
+body {
+  width: 1024px;
+}
+
+.row {
+  overflow: hidden;
+  display: flex;
+  flex-flow: row wrap;
+  overflow: hidden;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+
+.bit {
+  text-align: center;
+  margin: 0.25rem;
+}
+
+img {
+  max-width: 450px;
+  max-height: 450px;
+  margin: 5px;
+}

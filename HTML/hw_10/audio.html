@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Музыка</title>
+    <style>
+      body {
+        background: #333; /* Цвет фона */
+        color: rgb(255, 255, 255); /* Цвет текста */
+      }
+
+      P.displayed1 {
+        text-align: center;
+        font-family: Verdana, Arial, Helvetica, sans-serif;
+        font-size: 30pt; /* Размер шрифта в пунктах */
+      }
+
+      P.displayed0 {
+        text-align: center;
+        font-family: Verdana, Arial, Helvetica, sans-serif;
+      }
+
+      IMG.displayed {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      audio {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <img class="displayed" src="files/online-kino_poster.jpg" />
+    <p class="displayed0">
+      <b
+        ><a href="index.html">Главная</a> | <font color="red">Музыка</font> |
+        <a href="video.html">Фильмы</a></b
+      >
+    </p>
+    <p class="displayed1">Metallica. Nothing Else Matters</p>
+    <audio controls>
+      <source
+        src="files/Metallica-Nothing Else Matters.mp3"
+        type="audio/mpeg"
+      />
+    </audio>
+    <p class="displayed1">Ария. Закат</p>
+    <audio controls>
+      <source src="files/arija_-_zakat.mp3" type="audio/mpeg" />
+    </audio>
+    <p class="displayed1">Rammstein. Ohne dich</p>
+    <audio controls>
+      <source src="files/rammstein-ohne-dich.mp3" type="audio/mpeg" />
+    </audio>
+  </body>
+</html>

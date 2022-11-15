@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Работа с формами</title>
+    <style>
+      div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      hr {
+        border: none;
+        background-color: black;
+        color: black;
+        height: 2px;
+        width: 400px;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1>Работа с формами</h1>
+      <h2>Задание 1</h2>
+      <form>
+        <fieldset>
+          <legend>Регистрация нового пользователя</legend>
+          <p>Имя: <input /></p>
+          <p>
+            Укажите возраст:
+            <select>
+              <option value="v1">10-15 лет</option>
+              <option value="v2">15-20 лет</option>
+              <option value="v3">20-30 лет</option>
+              <option value="v4">30-40 лет</option>
+              <option value="v5">больше 40 лет</option>
+            </select>
+          </p>
+          <p>
+            Укажите пол: мужской
+            <input name="sex" type="radio" value="men" /> женский
+            <input name="sex" type="radio" value="women" />
+          </p>
+          <p>
+            Страна проживания:
+            <select>
+              <option value="b1">Беларусь</option>
+              <option value="b2">Российская Федерация</option>
+              <option value="b3">Другое государство</option>
+            </select>
+          </p>
+
+          <p>
+            Владение языками: русский
+            <input type="checkbox" name="language" value="русский" />
+            белорусский
+            <input type="checkbox" name="language" value="белорусский" />
+            английский
+            <input type="checkbox" name="language" value="английский" />
+          </p>
+          <p>
+            Фото профиля: <button type="file">Обзор...</button> Файл не выбран.
+          </p>
+          <p>Введите логин: <input required name="login" /></p>
+          <p>Введите пароль: <input required type="password" /></p>
+          <p>Повторите пароль: <input required type="password" /></p>
+        </fieldset>
+        <p>
+          <button type="reset">Сброс</button>
+          <button type="submit">Отправить</button>
+        </p>
+      </form>
+
+      <h2>Задание 2</h2>
+      <form>
+        <h3>Запись на курсы</h3>
+        <hr />
+        <span>Имя</span><br />
+        <input value="Алексей" /><br />
+        <br />
+        <span>Язык программирования</span><br />
+        <span><input value="dev1" name="devLanguage" type="radio" />C++</span
+        ><br />
+        <span
+          ><input
+            value="dev2"
+            name="devLanguage"
+            type="radio"
+            checked
+          />PHP</span
+        ><br />
+        <span><input value="dev3" name="devLanguage" type="radio" />Python</span
+        ><br /><br />
+
+        <span
+          >Дополнительная информация:<br />
+          <textarea required cols="30" rows="5">
+Есть опыт программирования на C++</textarea
+          >
+          <br /> </span
+        ><br />
+        <span>Секретное слово:</span><br />
+        <input type="password" required />
+        <p><input type="submit" /> <input type="reset" value="Очистить" /></p>
+      </form>
+
+      <form>
+        <fieldset>
+          <legend><h3>Параметры автомобиля</h3></legend>
+          <p>Марка автомобиля: <input /></p>
+          <p>
+            Объём двигателя, см<sup>3</sup>:
+            <input type="number" placeholder="1900" />
+          </p>
+          <p>
+            Область
+            <select>
+              <option>Брестская</option>
+              <option>Минская</option>
+              <option>Гомельская</option>
+              <option>Витебская</option>
+              <option>Могилёвская</option>
+              <option>Гродненская</option>
+            </select>
+          </p>
+          <span>Тип КПП:</span>
+          <br /><input type="radio" name="kpp" value="Автомат" />Автомат
+          <br /><input
+            type="radio"
+            name="kpp"
+            value="Механика"
+          />Механика<br /><br />
+
+          <span>Двигатель:</span>
+          <br /><input type="checkbox" name="drive" value="Электро" />Электро
+          <br /><input type="checkbox" name="drive" value="Дизель" />Дизель
+          <br /><input type="checkbox" name="drive" value="Бензин" />Бензин
+          <br />
+          <input
+            type="checkbox"
+            name="drive"
+            value="Пропан-бутан"
+          />Пропан-бутан <br /><input
+            type="checkbox"
+            name="drive"
+            value="Метан"
+          />Метан <br />
+          <br /><span>Описание</span> <br /><textarea
+            cols="40"
+            rows="5"
+          ></textarea>
+          <p>
+            <input type="submit" />
+            <input type="reset" value="Очистить" />
+          </p>
+        </fieldset>
+      </form>
+    </div>
+  </body>
+</html>

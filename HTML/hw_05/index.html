@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homework #5</title>
+    <style>
+      h1 {
+        font-size: 50px;
+        color: #6e76f1;
+      }
+
+      div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .form-container {
+        width: 400px;
+        padding: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1>Cleverland</h1>
+      <h2>Формы. Элементы форм</h2>
+
+      <form class="form-container">
+        <fieldset>
+          <legend>Данные пользователя</legend>
+          <p>Логин: <input name="login" size="20px" placeholder="Login" /></p>
+          <p>
+            Пароль:
+            <input
+              name="pass"
+              size="20px"
+              type="password"
+              placeholder="Password"
+            />
+          </p>
+          <p><input type="submit" value="Вход" /></p>
+        </fieldset>
+      </form>
+
+      <form class="form-container">
+        <fieldset>
+          <legend>Пожелания</legend>
+          <p>
+            <select>
+              <optgroup label="Города Витебской области">
+                <option value="v1">Орша</option>
+                <option value="v2">Шумилино</option>
+                <option value="v3">Миоры</option>
+              </optgroup>
+              <optgroup label="Города Минской области">
+                <option value="m1">Вилейка</option>
+                <option value="m2">Старые дороги</option>
+                <option value="m3">Логойск</option>
+              </optgroup>
+              <optgroup label="Города Брестской области">
+                <option value="b1">Береза</option>
+                <option selected value="b2">Ивацевичи</option>
+                <option value="b3">Пинск</option>
+              </optgroup>
+            </select>
+          </p>
+
+          <p>
+            <select name="select" size="4" multiple>
+              <option disabled value="q1">Машина</option>
+              <option value="q2">Свой дом</option>
+              <option value="q3">Квартира</option>
+              <option value="q4">Сад</option>
+            </select>
+          </p>
+
+          <p>Просите что хотите <input placeholder="что-то" /></p>
+
+          <p><input type="checkbox" checked /> Текст</p>
+
+          <p>
+            <textarea
+              required
+              placeholder="Много текста"
+              cols="45"
+              rows="11"
+            ></textarea>
+          </p>
+          <p><input type="submit" value="Отправить" /></p>
+        </fieldset>
+      </form>
+    </div>
+  </body>
+</html>

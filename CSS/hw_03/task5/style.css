@@ -1,0 +1,30 @@
+#p_1 {
+  width: 500px;
+  padding: 1em;
+  margin: 2em;
+  border: 1px solid;
+  font-family: gabriola;
+  font-size: 1.2em;
+  font-style: normal;
+}
+
+#p_2 {
+  width: 500px;
+  padding: 1em;
+  margin: 2em;
+  border: 1px solid;
+  font-family: gabriola;
+  font-size: 1.2em;
+  font-style: italic;
+}
+
+#p_3 {
+  width: 500px;
+  padding: 1em;
+  margin: 2em;
+  border: 1px solid;
+  font-family: gabriola;
+  font-size: 1.2em;
+  font-variant: small-caps;
+  font-weight: normal;
+}

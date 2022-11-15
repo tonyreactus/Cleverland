@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>DIV</h1>
+    <div>
+      <h2>1. Знакомство с фронтендом</h2>
+      <p>
+        На <a href="https://clevertec.ru/">практике</a> знакомимся с базовыми
+        технологиями веб-разработки и узнаём, как эти технологии работают.
+        Размечаем страницу, оформляем её с помощью стилей. Пишем свой первый
+        скрипт.
+      </p>
+    </div>
+    <div>
+      <h2>2. Знакомство с HTML и CSS</h2>
+      <p>
+        Изучаем основы HTML и CSS. На практике разбираемся с семантической
+        разметкой и базовыми механизмами стилизации на примере небольшого сайта.
+      </p>
+    </div>
+    <div>
+      <h2>3. Базовые механики стилизации</h2>
+      <p>
+        Разбираемся с селекторами и каскадностью. Учимся задавать фоновые
+        изображения.
+      </p>
+    </div>
+    <div>
+      <h2>4. Изучим формы</h2>
+      <div>
+        <h3>Форма 1</h3>
+        <form>
+          <fieldset>
+            <legend>Регистрация нового пользователя</legend>
+            <p>Имя: <input /></p>
+            <p>
+              Укажите возраст:
+              <select>
+                <option value="v1">10-15 лет</option>
+                <option value="v2">15-20 лет</option>
+                <option value="v3">20-30 лет</option>
+                <option value="v4">30-40 лет</option>
+                <option value="v5">больше 40 лет</option>
+              </select>
+            </p>
+            <p>
+              Укажите пол: мужской
+              <input name="sex" type="radio" value="men" /> женский
+              <input name="sex" type="radio" value="women" />
+            </p>
+            <p>
+              Страна проживания:
+              <select>
+                <option value="b1">Беларусь</option>
+                <option value="b2">Российская Федерация</option>
+                <option value="b3">Другое государство</option>
+              </select>
+            </p>
+
+            <p>
+              Владение языками: русский
+              <input type="checkbox" name="language" value="русский" />
+              белорусский
+              <input type="checkbox" name="language" value="белорусский" />
+              английский
+              <input type="checkbox" name="language" value="английский" />
+            </p>
+            <p>
+              Фото профиля: <button type="file">Обзор...</button> Файл не
+              выбран.
+            </p>
+            <p>Введите логин: <input required name="login" /></p>
+            <p>Введите пароль: <input required type="password" /></p>
+            <p>Повторите пароль: <input required type="password" /></p>
+          </fieldset>
+          <p>
+            <button type="reset">Сброс</button>
+            <button type="submit">Отправить</button>
+          </p>
+        </form>
+
+        <h3>Форма 2</h3>
+        <form>
+          <h4>Запись на курсы</h4>
+          <hr />
+          <span>Имя</span><br />
+          <input value="Алексей" /><br />
+          <br />
+          <span>Язык программирования</span><br />
+          <span><input value="dev1" name="devLanguage" type="radio" />C++</span
+          ><br />
+          <span
+            ><input
+              value="dev2"
+              name="devLanguage"
+              type="radio"
+              checked
+            />PHP</span
+          ><br />
+          <span
+            ><input value="dev3" name="devLanguage" type="radio" />Python</span
+          ><br /><br />
+
+          <span
+            >Дополнительная информация:<br />
+            <textarea required cols="30" rows="5">
+          Есть опыт программирования на C++</textarea
+            >
+            <br /> </span
+          ><br />
+          <span>Секретное слово:</span><br />
+          <input type="password" required />
+          <p><input type="submit" /> <input type="reset" value="Очистить" /></p>
+        </form>
+
+        <form>
+          <fieldset>
+            <legend><h3>Параметры автомобиля</h3></legend>
+            <p>Марка автомобиля: <input /></p>
+            <p>Объём двигателя, см<sup>3</sup>: <input placeholder="1900" /></p>
+            <p>
+              Область
+              <select>
+                <option>Брестская</option>
+                <option>Минская</option>
+                <option>Гомельская</option>
+                <option>Витебская</option>
+                <option>Могилёвская</option>
+                <option>Гродненская</option>
+              </select>
+            </p>
+            <span>Тип КПП:</span>
+            <br /><input type="radio" name="kpp" value="Автомат" />Автомат
+            <br /><input
+              type="radio"
+              name="kpp"
+              value="Механика"
+            />Механика<br /><br />
+
+            <span>Двигатель:</span>
+            <br /><input type="checkbox" name="drive" value="Электро" />Электро
+            <br /><input type="checkbox" name="drive" value="Дизель" />Дизель
+            <br /><input type="checkbox" name="drive" value="Бензин" />Бензин
+            <br />
+            <input
+              type="checkbox"
+              name="drive"
+              value="Пропан-бутан"
+            />Пропан-бутан <br /><input
+              type="checkbox"
+              name="drive"
+              value="Метан"
+            />Метан <br />
+            <br /><span>Описание</span> <br /><textarea
+              cols="40"
+              rows="5"
+            ></textarea>
+            <p>
+              <input type="submit" />
+              <input type="reset" value="Очистить" />
+            </p>
+          </fieldset>
+        </form>
+      </div>
+    </div>
+    <div>
+      <h2>5. Работа с картами</h2>
+      <p>
+        <iframe
+          id="inlineFrameExample"
+          title="Inline Frame Example"
+          width="300"
+          height="200"
+          src="https://www.openstreetmap.org/export/embed.html?bbox=-0.004017949104309083%2C51.47612752641776%2C0.00030577182769775396%2C51.478569861898606&layer=mapnik"
+        >
+        </iframe>
+      </p>
+    </div>
+    <div>
+      <h2>6. Заполнение анкеты</h2>
+      <form>
+        <table>
+          <tbody>
+            <tr>
+              <td>Фамилия</td>
+              <td>
+                <input
+                  name="surname"
+                  type="text"
+                  size="50"
+                  autocomplete="off"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>Имя</td>
+              <td>
+                <input name="name" type="text" size="50" autocomplete="off" />
+              </td>
+            </tr>
+            <tr>
+              <td>Отчество</td>
+              <td>
+                <input
+                  name="middle_name"
+                  type="text"
+                  size="50"
+                  autocomplete="off"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2">О себе сообщаю следующие сведения:</td>
+            </tr>
+            <tr>
+              <td>Пол</td>
+              <td>
+                <p>
+                  <input name="sex" checked type="radio" value="1" />Мужской
+                </p>
+                <p><input name="sex" type="radio" value="2" />Женский</p>
+              </td>
+            </tr>
+            <tr>
+              <td>Дата рождения</td>
+              <td>
+                <input name="date_of_birth" type="date" name="calendar" />
+              </td>
+            </tr>
+            <tr>
+              <td>Количество полных лет</td>
+              <td>
+                <input
+                  name="age"
+                  type="number"
+                  name="num"
+                  min="18"
+                  max="63"
+                  value="18"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>Адрес места жительства (проживания)</td>
+              <td>
+                <input
+                  name="address"
+                  type="text"
+                  size="50"
+                  autocomplete="off"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>Номер контактного телефона</td>
+              <td>
+                +375<input
+                  type="tel"
+                  name="phone_number"
+                  pattern="[0-9]{3}-[0-9]{3}"
+                  autocomplete="off"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>Контактный email</td>
+              <td><input type="email" name="email" autocomplete="off" /></td>
+            </tr>
+            <tr>
+              <td>Образование</td>
+              <td>
+                <p>
+                  <input
+                    name="education"
+                    checked
+                    type="radio"
+                    value="1"
+                  />-основное общее среднее;
+                </p>
+                <p>
+                  <input name="education" type="radio" value="2" />-среднее
+                  (полное) общее высшее специальное;
+                </p>
+                <p>
+                  <input name="education" type="radio" value="3" />-начальное
+                  профессиональное;
+                </p>
+                <p><input name="education" type="radio" value="4" />-иное;</p>
+              </td>
+            </tr>
+            <tr>
+              <td>Профессия (специальность)</td>
+              <td>
+                <input
+                  name="profession"
+                  type="text"
+                  size="50"
+                  autocomplete="off"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>Стаж работы по специальности</td>
+              <td>
+                <select name="experience">
+                  <option checked value="1">Менее года</option>
+                  <option value="2">1-3 года</option>
+                  <option value="3">3-5 лет</option>
+                  <option value="4">5-15 лет</option>
+                  <option value="5">Более 15 лет</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td>Предыдущее место работы</td>
+              <td>
+                <input
+                  name="prior_work"
+                  type="text"
+                  size="50"
+                  autocomplete="off"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>Период работы на предыдущем месте</td>
+              <td>
+                с <input type="date" name="data1" /> по
+                <input type="date" name="data2" />
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                <input type="reset" value="Очистить форму" />
+                <input
+                  type="submit"
+                  onclick="checkForm()"
+                  value="Отправить форму"
+                />
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </form>
+    </div>
+    <h2>7. Списки</h2>
+    <div>
+      <ul type="circle">
+        <li>Элемент списка</li>
+        <li>Элемент списка</li>
+        <li>Элемент списка</li>
+      </ul>
+      <ul type="square">
+        <li>Элемент списка</li>
+        <li>Элемент списка</li>
+        <li>Элемент списка</li>
+      </ul>
+    </div>
+    <h2>8. Изображения</h2>
+    <div>
+      <img
+        src="https://www.w3schools.com/html/pic_trulli.jpg"
+        alt="Italian Trulli"
+      />
+    </div>
+    <h2>9. Видео</h2>
+    <div>
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/-xPGbKOSUDg"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+    </div>
+    <h2>10. Работа с текстом</h2>
+    <div>
+      <p>Мой любимый цвет <del>зеленый</del> <ins>синий</ins>!</p>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,17 @@
+.p_1 {
+  width: 500px;
+  background-color: hsl(36, 90%, 49%);
+  letter-spacing: 1px;
+  word-spacing: 5px;
+  line-height: 1.1em;
+  text-indent: 1%;
+}
+
+.p_2 {
+  width: 500px;
+  background-color: violet;
+  letter-spacing: 0.6em;
+  word-spacing: 15px;
+  line-height: 1.6em;
+  text-indent: 3%;
+}
